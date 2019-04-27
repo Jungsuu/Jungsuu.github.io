@@ -1,0 +1,26 @@
+---
+title:  "Java Stream 정리"
+date:   2019-04-28 10:00:00
+description: Java Stream
+---
+
+반복자를 사용할경우, 이전에 사용하던 대로 하자면..
+
+```java
+String [] array = { "1", "2", "3", "4"};
+List<String> list = Arrays.asList(array);
+int size = list.size();
+
+for(int i = 0 ; i < size ; i++){
+    System.out.println(list.get(i));
+}
+
+// 또는
+
+list<String> list = Arrays.asList(array);
+Iterater<String> iter = list.iterater();
+while(iter.hasNext()){
+    System.out.println(iter.next());
+}
+
+```
